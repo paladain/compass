@@ -100,7 +100,7 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 diff = transform.position - plPosPre;
 
-        if (diff.magnitude != 0) //ベクトルの長さが0でないときにプレイヤーの向きを変える処理を入れる
+        if (diff.magnitude != 0) // ベクトルの長さが0でないときにプレイヤーの向きを変える処理を入れる
         {
             Skin.transform.rotation = Quaternion.LookRotation(diff);  //ベクトルの情報をQuaternion.LookRotationに引き渡し回転量を取得しプレイヤーを回転させる
         }
